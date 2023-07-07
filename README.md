@@ -66,8 +66,8 @@ The top-level `energy-templates.toml` file applies to all the configurations. Ho
 | CHECKSUM | If checksums should be calculated | false |
 | CONTROLLER | Which controller to use (`Simple`, `SimpleFlex`, `External`, ...) | Simple |
 | OUTPUTS | The output path | outputs |
-<!-- | FLEXFILE | The flexibility file to load | flex.json | -->
-<!-- | ESTIFILE | The energy estimate file to load | estimate.json | -->
+| ESTIFILE | The energy estimate file to load | estimate.json |
+| FLEXFILE | The flexibility file to load | flex.json |
 
 ---
 
