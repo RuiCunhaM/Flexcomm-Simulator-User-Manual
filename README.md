@@ -6,9 +6,10 @@
     1. [Topologies Directory Structure](#directory-structure)
     2. [Files](#files)
 2. [Runtime Flags](#runtime-flags)
-3. [External Controller](#external-controller)
-4. [EnergyAPI](#energyapi)
-5. [SNMP](#snmp)
+3. [Internal Controller](#internal-controller)
+4. [External Controller](#external-controller)
+5. [EnergyAPI](#energyapi)
+6. [SNMP](#snmp)
 
 ---
 
@@ -64,10 +65,15 @@ The top-level `energy-templates.toml` file applies to all the configurations. Ho
 | ---- | ----------- | ------------- |
 | TOPO | The topology scenario to simulate | example |
 | CHECKSUM | If checksums should be calculated | false |
-| CONTROLLER | Which controller to use (`Simple`, `SimpleFlex`, `External`, ...) | Simple |
+| CONTROLLER | Which controller to use (`ns3::Simple`, `ns3::SimpleFlex`, `External`, `ns3::OFSwitch13LearningController`, etc...) | Simple |
 | OUTPUTS | The output path | outputs |
 | ESTIFILE | The energy estimate file to load | estimate.json |
 | FLEXFILE | The flexibility file to load | flex.json |
+
+---
+
+## Internal Controller
+Examples of Internal Controllers are provided with the Flexcomm Simulator (*e.g,:* `ns3::SimpleController`). To develop new Internal Controllers refer to [Working with custom Controllers](controllers.md). 
 
 ---
 
