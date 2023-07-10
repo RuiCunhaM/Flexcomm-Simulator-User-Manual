@@ -65,7 +65,7 @@ The top-level `energy-templates.toml` file applies to all the configurations. Ho
 | ---- | ----------- | ------------- |
 | TOPO | The topology scenario to simulate | example |
 | CHECKSUM | If checksums should be calculated | false |
-| CONTROLLER | Which controller to use (`ns3::Simple`, `ns3::SimpleFlex`, `External`, `ns3::OFSwitch13LearningController`, etc...) | Simple |
+| CONTROLLER | Which controller to use (`ns3::SimpleController`, `ns3::SimpleControllerFlex`, `External`, etc...) | ns3::SimpleController |
 | OUTPUTS | The output path | outputs |
 | ESTIFILE | The energy estimate file to load | estimate.json |
 | FLEXFILE | The flexibility file to load | flex.json |
