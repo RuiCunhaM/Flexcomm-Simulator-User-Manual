@@ -52,6 +52,8 @@ Each topology has its own configuration files:
   - [`energy-templates.toml`](energy-templates.md) (optional)
   - [`flex.json`](flexibility.md) (optional)
   - [`estimate.json`](flexibility.md) (optional)
+  - [`link-failures`](link-failures.md) (optional)
+
 
 The top-level `energy-templates.toml` file applies to all the configurations. However, each topology can also specify a local templates file. In this case, for templates with equal names, the local file overrides the global configuration. 
 
@@ -69,6 +71,7 @@ The top-level `energy-templates.toml` file applies to all the configurations. Ho
 | OUTPUTS | The output path | outputs |
 | ESTIFILE | The energy estimate file to load | estimate.json |
 | FLEXFILE | The flexibility file to load | flex.json |
+| LINKFAILURES | The link failures file to load | NONE |
 
 ---
 
