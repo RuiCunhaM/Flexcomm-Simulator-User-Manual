@@ -57,7 +57,7 @@ Each topology has its own configuration files:
 
 The top-level `energy-templates.toml` file applies to all the configurations. However, each topology can also specify a local templates file. In this case, for templates with equal names, the local file overrides the global configuration. 
 
-**For how to specify different measurement units see [Units](units-fomat.md).**
+**For how to specify different measurement units see [Units](units.md).**
 
 ---
 
