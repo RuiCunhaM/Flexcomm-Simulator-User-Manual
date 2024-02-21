@@ -64,12 +64,12 @@ These energy models calculate the estimated energy consumption based on the CPU 
 
 ```toml
 [...]
-model = "cpuLoad" | "cpuLoadDiscrete"
-percentages = [0.0, 50.0, 100.0]
+model = "cpuLoad | cpuLoadDiscrete"
+percentages = [0.0, 0.5, 1.0]
 consumptions = [20.0, 40.0, 90.0]
 ```
 
-- `percentages`: The discrete percentages steps
+- `percentages`: The discrete percentages steps **(From 0.0 to 1.0)**
 
 - `consumptions`: The correspondent energy consumptions for each percentage step.
 
