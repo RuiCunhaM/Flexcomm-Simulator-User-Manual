@@ -9,7 +9,7 @@ This file is used to describe and configure the nodes present in the simulation.
     2. [Configuring a Switch](#configuring-a-switch)
         1. [Energy Models](#energy-models)
             1. [Chassis](#chassis)
-            <!-- 2. [Interface](#interface) -->
+            2. [Interfaces](#interfaces)
 
 ---
 
@@ -87,25 +87,22 @@ model = "<model>"
 #<model configs>
 ```
 
+---
+
+###### Interfaces
+Reference a template:
+```toml
+[node.interfaces]
+template = "<template name>"
+```
+
+Define model:
+```toml
+[node.interfaces]
+model = "<model>"
+#<model configs>
+```
+
+---
+
 For more details on how to define an energy model refer to [energy-templates.toml](energy-templates.md).
-
-<!-- --- -->
-
-<!-- ###### Interface -->
-<!-- Reference a template: -->
-<!-- ```toml -->
-<!-- [node.interface] -->
-<!-- template = "<template name>" -->
-<!-- ``` -->
-
-<!-- Define model: -->
-<!-- ```toml -->
-<!-- [node.interface] -->
-<!-- model = "<model>" -->
-<!-- #<model configs> -->
-<!-- ``` -->
-
-<!-- For more details on how to define an energy model refer to [energy-templates.toml](energy-templates.md). -->
-
-<!-- --- -->
-
